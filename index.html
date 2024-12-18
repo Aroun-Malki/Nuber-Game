@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+<body class="light-mode">
+
+    <button class="mode-toggle">Dark Mode</button>
+
+    <h1>Number Guessing Game</h1>
+    <div class="container">
+        <h2 class="heading">Guess a number between 1 to 100</h2>
+        <input type="text" placeholder="Guess a number" />
+        <p class="guess"></p>
+        <button class="checkBtn">Check</button>
+    </div>
+
+    <!-- Remaining chances display -->
+    <div class="chances-display">
+        Chances Left: <span class="chance-big">10</span>
+    </div>
+
+    <!-- Overlay for losing animation -->
+    <div class="overlay">
+        <h2 class="overlay-text">Game Over</h2>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
